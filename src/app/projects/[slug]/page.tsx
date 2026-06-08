@@ -5,7 +5,7 @@ import { ScreenshotViewer } from '@/components/ScreenshotViewer';
 import styles from './page.module.css';
 
 interface ProjectDetailPageProps {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }
 
 export const dynamicParams = false;
@@ -17,8 +17,9 @@ export async function generateStaticParams(): Promise<{ slug: string }[]> {
   }));
 }
 
-export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
-  const project = getProjectBySlug(params.slug);
+export default async function ProjectDetailPage({ params }: ProjectDetailPageProps) {
+  const { slug } = await params;
+  const project = getProjectBySlug(slug);
 
   if (!project) {
     notFound();
