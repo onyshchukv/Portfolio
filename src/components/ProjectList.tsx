@@ -12,6 +12,7 @@ interface ProjectItem {
   image: string;
   category: 'design' | 'vibe-coding' | 'hobbies';
   href?: string;
+  imageFit?: 'cover' | 'contain';
 }
 
 const projects: ProjectItem[] = [
@@ -59,6 +60,16 @@ const projects: ProjectItem[] = [
     image: '/images/projects/excelra/hero.png',
     category: 'design',
     href: '/projects/excelra',
+  },
+  {
+    slug: 'geojam',
+    date: '2021',
+    title: 'Geojam',
+    description: 'Redesigned a Web3 social media mobile app for the creator economy with token ecosystem and peer-to-peer marketplace.',
+    image: '/images/projects/geojam/hero-vector.png',
+    category: 'design',
+    href: '/projects/geojam',
+    imageFit: 'contain',
   },
 ];
 
@@ -109,6 +120,7 @@ export default function ProjectList({ activeTab, onTabChange }: { activeTab: str
                     width={480}
                     height={320}
                     className={styles.image}
+                    style={project.imageFit === 'contain' ? { objectFit: 'contain' } : undefined}
                   />
                 </div>
               </div>

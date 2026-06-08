@@ -52,6 +52,14 @@ const allProjects: ProjectLink[] = [
     description: 'Redesigned the search experience for one of the world\'s largest medicinal chemistry databases.',
     image: '/images/projects/excelra/hero.png',
   },
+  {
+    slug: 'geojam',
+    href: '/projects/geojam',
+    date: '2021',
+    title: 'Geojam',
+    description: 'Redesigned a Web3 social media mobile app for the creator economy with token ecosystem and peer-to-peer marketplace.',
+    image: '/images/projects/geojam/hero-vector.png',
+  },
 ];
 
 interface OtherProjectsProps {
