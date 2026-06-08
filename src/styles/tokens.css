@@ -1,0 +1,44 @@
+:root {
+  /* Typography — next/font sets --font-primary and --font-display CSS variables on <html> */
+  --font-primary: 'Inter', sans-serif;
+  --font-display: 'Sorts Mill Goudy', serif;
+  --font-size-base: 16px;
+  --font-size-h1: clamp(2rem, 5vw, 3.5rem);
+  --font-size-h2: clamp(1.5rem, 3vw, 2rem);
+  --font-size-body: clamp(1rem, 2vw, 1.125rem);
+  --font-size-small: 0.875rem;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.6;
+
+  /* Spacing */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 2rem;
+  --space-xl: 4rem;
+
+  /* Layout */
+  --content-max-width: 1200px;
+  --content-margin: max(5%, 1rem);
+
+  /* Colors */
+  --color-bg: #fafafa;
+  --color-text: #1a1a1a;
+  --color-text-muted: #666666;
+  --color-accent: #2563eb;
+  --color-accent-hover: #1d4ed8;
+  --color-border: #e5e5e5;
+  --color-placeholder: #f0f0f0;
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-normal: 300ms ease;
+
+  /* Breakpoints (for reference — use in media queries directly) */
+  /* --bp-mobile: 600px */
+  /* --bp-tablet: 768px */
+  /* --bp-desktop: 1024px */
+}

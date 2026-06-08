@@ -1,0 +1,21 @@
+{
+  "slug": "travel-app",
+  "title": "Travel Planning Companion App",
+  "description": "A mobile-first travel planning app that helps users organize trips collaboratively. The app combines itinerary building, budget tracking, and group coordination into a single interface. Research showed that travelers use 4-7 different apps during trip planning — this project aimed to consolidate the core workflows. The design emphasizes offline functionality for use during travel and supports multiple time zones for international trips. User testing with 25 participants across 5 countries validated the cross-cultural usability of the interface.",
+  "shortDescription": "Collaborative trip planning combining itinerary, budget, and group coordination",
+  "featured": false,
+  "order": 4,
+  "screenshots": [
+    {
+      "src": "/images/projects/travel-itinerary.svg",
+      "alt": "Trip itinerary view showing daily schedule with map integration",
+      "caption": "Day-by-day itinerary with integrated map view"
+    },
+    {
+      "src": "/images/projects/travel-budget.svg",
+      "alt": "Budget tracker showing expenses by category with split costs",
+      "caption": "Shared budget tracking with automatic currency conversion"
+    }
+  ],
+  "createdAt": "2023-11-05T00:00:00.000Z"
+}

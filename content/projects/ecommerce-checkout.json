@@ -1,0 +1,26 @@
+{
+  "slug": "ecommerce-checkout",
+  "title": "E-commerce Checkout Flow Optimization",
+  "description": "Redesigned the checkout experience for a mid-size e-commerce platform processing 50,000+ orders monthly. The existing flow had a 68% cart abandonment rate. Through heatmap analysis, session recordings, and A/B testing, we identified key friction points: forced account creation, unclear shipping costs, and a confusing multi-page form. The new single-page checkout with guest option, real-time shipping calculation, and progress indicators reduced abandonment to 41% — a 27 percentage point improvement. The design also introduced saved payment methods and address autocomplete for returning customers.",
+  "shortDescription": "Reducing cart abandonment through streamlined single-page checkout design",
+  "featured": true,
+  "order": 2,
+  "screenshots": [
+    {
+      "src": "/images/projects/checkout-cart.svg",
+      "alt": "Shopping cart page with item summary and estimated totals",
+      "caption": "Cart summary with real-time shipping cost estimation"
+    },
+    {
+      "src": "/images/projects/checkout-form.svg",
+      "alt": "Single-page checkout form with shipping and payment sections",
+      "caption": "Consolidated checkout form with inline validation"
+    },
+    {
+      "src": "/images/projects/checkout-confirmation.svg",
+      "alt": "Order confirmation page with tracking information",
+      "caption": "Clear confirmation with order tracking and next steps"
+    }
+  ],
+  "createdAt": "2024-02-10T00:00:00.000Z"
+}

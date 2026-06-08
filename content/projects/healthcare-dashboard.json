@@ -1,0 +1,26 @@
+{
+  "slug": "healthcare-dashboard",
+  "title": "Healthcare Provider Dashboard",
+  "description": "Designed an analytics dashboard for healthcare providers managing patient populations across multiple clinics. The dashboard surfaces critical metrics — appointment no-show rates, patient satisfaction scores, and care gap alerts — in a scannable format that respects the cognitive load of busy clinicians. The project required close collaboration with medical staff to understand their workflow, compliance with HIPAA display requirements, and careful attention to data visualization accessibility. Color choices were validated for deuteranopia and protanopia, and all charts include text alternatives.",
+  "shortDescription": "Analytics dashboard helping clinicians manage patient populations effectively",
+  "featured": true,
+  "order": 3,
+  "screenshots": [
+    {
+      "src": "/images/projects/health-overview.svg",
+      "alt": "Dashboard overview showing key patient population metrics",
+      "caption": "At-a-glance metrics for daily clinical decision-making"
+    },
+    {
+      "src": "/images/projects/health-patients.svg",
+      "alt": "Patient list view with risk indicators and care gap alerts",
+      "caption": "Patient roster with color-blind safe risk indicators"
+    },
+    {
+      "src": "/images/projects/health-analytics.svg",
+      "alt": "Trend charts showing appointment and satisfaction data over time",
+      "caption": "Longitudinal trends with accessible data visualization"
+    }
+  ],
+  "createdAt": "2024-01-20T00:00:00.000Z"
+}

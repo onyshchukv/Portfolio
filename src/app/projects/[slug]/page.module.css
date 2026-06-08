@@ -1,0 +1,48 @@
+.container {
+  max-width: var(--content-max-width);
+  margin-inline: auto;
+  padding: var(--space-lg) var(--content-margin) var(--space-xl);
+  /* Prevent content from exceeding viewport */
+  overflow: hidden;
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  color: var(--color-accent);
+  text-decoration: none;
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-medium);
+  margin-bottom: var(--space-lg);
+  transition: color var(--transition-fast);
+  min-height: 44px;
+}
+
+.backLink:hover {
+  color: var(--color-accent-hover);
+}
+
+.title {
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  color: var(--color-text);
+  margin-bottom: var(--space-lg);
+}
+
+.description {
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-normal);
+  color: var(--color-text);
+  margin-bottom: var(--space-xl);
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.screenshots {
+  margin-top: var(--space-lg);
+  /* Contain the horizontal scroll within this section */
+  max-width: 100%;
+  overflow: visible;
+}

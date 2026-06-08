@@ -1,0 +1,85 @@
+.carousel {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  /* Break out of the container to both sides */
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  max-width: none;
+}
+
+/* Track — scrollable, hidden scrollbar */
+.track {
+  display: flex;
+  gap: 32px;
+  overflow-x: scroll;
+  overflow-y: visible;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  cursor: grab;
+  /* Padding so images can center — half viewport minus half of a typical image */
+  padding-left: calc(50vw - 400px);
+  padding-right: calc(50vw - 400px);
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.track::-webkit-scrollbar {
+  display: none;
+}
+
+.track:active {
+  cursor: grabbing;
+}
+
+/* Each image is wrapped in a button for click-to-center */
+.imageBtn {
+  flex-shrink: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  min-width: auto;
+  min-height: auto;
+  display: block;
+}
+
+.image {
+  height: 490px;
+  width: auto;
+  border-radius: 8px;
+  display: block;
+  pointer-events: none;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.caption {
+  font-size: 14px;
+  font-weight: var(--font-weight-medium);
+  letter-spacing: -0.07px;
+  line-height: 1.45;
+  color: rgba(0, 0, 0, 0.45);
+  text-align: center;
+  padding: 0;
+}
+
+@media (max-width: 1280px) {
+  .caption {
+    padding: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .image {
+    height: 300px;
+  }
+
+  .track {
+    padding-left: calc(50vw - 150px);
+    padding-right: calc(50vw - 150px);
+  }
+
+  .caption {
+    padding: 0;
+  }
+}

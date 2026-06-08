@@ -1,0 +1,43 @@
+.viewer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+  width: 100%;
+}
+
+.screenshotItem {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  min-width: 800px;
+}
+
+.scrollContainer {
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  max-width: 100%;
+  /* Prevent horizontal scroll from leaking to page level */
+  contain: inline-size;
+}
+
+.imageWrapper {
+  width: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: var(--color-placeholder);
+}
+
+.imageWrapper img {
+  min-width: 80px;
+}
+
+.caption {
+  margin: 0;
+  font-size: var(--font-size-small);
+  color: var(--color-text-muted);
+  line-height: var(--line-height-normal);
+  /* Caption stays within viewport even when image scrolls */
+  position: sticky;
+  left: 0;
+}

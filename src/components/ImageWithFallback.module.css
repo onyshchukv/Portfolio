@@ -1,0 +1,36 @@
+.wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  width: 100%;
+  height: 100%;
+  min-height: 120px;
+  background-color: var(--color-placeholder);
+  color: var(--color-text-muted);
+  font-size: var(--font-size-small);
+}
+
+.placeholderIcon {
+  width: 32px;
+  height: 32px;
+  opacity: 0.5;
+}
+
+.placeholderText {
+  margin: 0;
+  text-align: center;
+}

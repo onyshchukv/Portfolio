@@ -1,0 +1,246 @@
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 64px 240px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+/* Back link */
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: var(--font-weight-bold);
+  letter-spacing: -0.32px;
+  color: var(--color-text);
+  text-decoration: none;
+  transition: opacity var(--transition-fast);
+  min-height: auto;
+  min-width: auto;
+}
+
+.backLink svg {
+  width: 14px;
+  height: 14px;
+  min-width: 14px;
+  min-height: 14px;
+  flex-shrink: 0;
+}
+
+.backLink:hover {
+  opacity: 0.6;
+}
+
+/* Title */
+.title {
+  font-size: 32px;
+  font-weight: var(--font-weight-bold);
+  letter-spacing: -0.64px;
+  line-height: 1.4;
+  color: var(--color-text);
+}
+
+/* Sections */
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.sideBySection {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+.sideText {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sideImage {
+  flex-shrink: 0;
+  width: 305px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+/* Text blocks */
+.textBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sectionTitle {
+  font-size: 18px;
+  font-weight: var(--font-weight-bold);
+  letter-spacing: -0.09px;
+  line-height: 1.45;
+  color: var(--color-text);
+}
+
+.sectionBody {
+  font-size: 18px;
+  font-weight: var(--font-weight-medium);
+  letter-spacing: -0.09px;
+  line-height: 1.45;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.sectionBody p {
+  margin-bottom: 16px;
+}
+
+.sectionBody p:last-child {
+  margin-bottom: 0;
+}
+
+.sectionBody ul {
+  list-style: disc;
+  padding-left: 27px;
+  margin-bottom: 16px;
+}
+
+.sectionBody li {
+  margin-bottom: 0;
+}
+
+/* Images */
+.heroImage {
+  width: 100%;
+}
+
+.roundedImage {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.figure {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.screenshotShadow {
+  border: 1px solid #c5c5c9;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+.screenshotImage {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.pluginScreenshot {
+  border: 1px solid #c5c5c9;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+.caption {
+  font-size: 14px;
+  font-weight: var(--font-weight-medium);
+  letter-spacing: -0.07px;
+  line-height: 1.45;
+  color: rgba(0, 0, 0, 0.45);
+  text-align: center;
+  padding: 0 40px;
+}
+
+/* Horizontal scroll gallery */
+.horizontalScroll {
+  display: flex;
+  gap: 32px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 8px;
+}
+
+.evolutionImage {
+  flex-shrink: 0;
+  height: 490px;
+  width: auto;
+  border-radius: 0;
+}
+
+/* Wireframe grid — 4 images in a row on desktop, carousel on mobile */
+.wireframeGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  width: 100%;
+}
+
+.wireframeItem {
+  border: 1px solid #c5c5c9;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  aspect-ratio: 350 / 695;
+}
+
+.wireframeImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Responsive */
+@media (max-width: 1280px) {
+  .container {
+    padding: 64px 64px;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding: 32px 24px;
+    gap: 48px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .sideBySection {
+    flex-direction: column;
+  }
+
+  .sideImage {
+    width: 100%;
+  }
+
+  .sectionBody {
+    font-size: 16px;
+  }
+
+  .sectionTitle {
+    font-size: 16px;
+  }
+
+  .evolutionImage {
+    height: 300px;
+  }
+
+  /* Wireframe grid stays as grid on mobile too, just 2 columns */
+  .wireframeGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

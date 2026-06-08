@@ -1,0 +1,40 @@
+.gallery {
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+  padding: var(--space-xl) var(--content-margin);
+  /* Prevent content overflow at any viewport width */
+  overflow: hidden;
+}
+
+.heading {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--space-lg);
+  color: var(--color-text);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+}
+
+@media (min-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Wider viewports: add more horizontal margin (Req 1.3) */
+@media (min-width: 769px) {
+  .gallery {
+    padding-left: max(10%, var(--content-margin));
+    padding-right: max(10%, var(--content-margin));
+  }
+}

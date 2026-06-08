@@ -1,0 +1,117 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--color-bg);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hamburger toggle — hidden on desktop */
+.toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  min-width: 44px;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+}
+
+.hamburger {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--color-text);
+  position: relative;
+  transition: background var(--transition-fast);
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background: var(--color-text);
+  transition: transform var(--transition-fast);
+}
+
+.hamburger::before {
+  top: -7px;
+}
+
+.hamburger::after {
+  top: 7px;
+}
+
+/* Menu list — centered pill */
+.menu {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 16px 40px;
+  border-radius: 40px;
+  align-items: center;
+}
+
+.link {
+  color: var(--color-text);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: var(--font-weight-medium);
+  letter-spacing: -0.08px;
+  transition: color var(--transition-fast);
+  white-space: nowrap;
+}
+
+.link:hover {
+  color: var(--color-accent);
+}
+
+/* Mobile styles */
+@media (max-width: 767px) {
+  .toggle {
+    display: flex;
+  }
+
+  .menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+    background: var(--color-bg);
+    border-bottom: 1px solid var(--color-border);
+    border-radius: 0;
+    padding: 0 var(--content-margin);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height var(--transition-normal), padding var(--transition-normal);
+  }
+
+  .menuOpen {
+    max-height: 300px;
+    padding: var(--space-md) var(--content-margin);
+  }
+
+  .link {
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+    padding: var(--space-sm) 0;
+  }
+}

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <rect width="1200" height="800" fill="#f0f7f4"/>
+  <rect x="0" y="0" width="1200" height="64" fill="#1b5e20"/>
+  <text x="80" y="42" font-family="sans-serif" font-size="20" fill="white">HealthView Dashboard</text>
+  <rect x="40" y="100" width="260" height="140" rx="8" fill="white" stroke="#c8e6c9"/>
+  <text x="60" y="135" font-family="sans-serif" font-size="14" fill="#5f6368">Active Patients</text>
+  <text x="60" y="190" font-family="sans-serif" font-size="36" fill="#1b5e20">2,847</text>
+  <text x="60" y="220" font-family="sans-serif" font-size="12" fill="#34a853">+12% this month</text>
+  <rect x="320" y="100" width="260" height="140" rx="8" fill="white" stroke="#c8e6c9"/>
+  <text x="340" y="135" font-family="sans-serif" font-size="14" fill="#5f6368">Appointments Today</text>
+  <text x="340" y="190" font-family="sans-serif" font-size="36" fill="#1b5e20">48</text>
+  <text x="340" y="220" font-family="sans-serif" font-size="12" fill="#fb8c00">3 no-shows</text>
+  <rect x="600" y="100" width="260" height="140" rx="8" fill="white" stroke="#c8e6c9"/>
+  <text x="620" y="135" font-family="sans-serif" font-size="14" fill="#5f6368">Satisfaction Score</text>
+  <text x="620" y="190" font-family="sans-serif" font-size="36" fill="#1b5e20">4.6</text>
+  <text x="680" y="190" font-family="sans-serif" font-size="16" fill="#5f6368">/5.0</text>
+  <rect x="880" y="100" width="280" height="140" rx="8" fill="white" stroke="#ffcdd2"/>
+  <text x="900" y="135" font-family="sans-serif" font-size="14" fill="#5f6368">Care Gap Alerts</text>
+  <text x="900" y="190" font-family="sans-serif" font-size="36" fill="#d32f2f">14</text>
+  <text x="900" y="220" font-family="sans-serif" font-size="12" fill="#d32f2f">Requires attention</text>
+</svg>

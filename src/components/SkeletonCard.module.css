@@ -1,0 +1,42 @@
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.card {
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: var(--color-placeholder);
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+.image {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  background-color: var(--color-border);
+}
+
+.body {
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.title {
+  height: 1.25rem;
+  width: 70%;
+  border-radius: 4px;
+  background-color: var(--color-border);
+}
+
+.description {
+  height: 1rem;
+  width: 90%;
+  border-radius: 4px;
+  background-color: var(--color-border);
+}

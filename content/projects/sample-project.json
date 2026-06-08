@@ -1,0 +1,26 @@
+{
+  "slug": "sample-project",
+  "title": "Mobile Banking App Redesign",
+  "description": "A complete redesign of a mobile banking application focused on simplifying complex financial tasks for everyday users. The project involved extensive user research with 40+ participants, competitive analysis of 12 banking apps, and iterative prototyping over 8 weeks. Key improvements included a streamlined onboarding flow that reduced drop-off by 35%, a redesigned transaction history with smart categorization, and an accessible bill payment flow that tested at 95% task completion rate. The design system was built with accessibility as a core principle, achieving WCAG 2.1 AA compliance across all screens.",
+  "shortDescription": "Simplifying complex financial tasks for everyday mobile banking users",
+  "featured": true,
+  "order": 1,
+  "screenshots": [
+    {
+      "src": "/images/projects/banking-dashboard.svg",
+      "alt": "Mobile banking dashboard showing account overview and recent transactions",
+      "caption": "Main dashboard with account summary and quick actions"
+    },
+    {
+      "src": "/images/projects/banking-transactions.svg",
+      "alt": "Transaction history screen with smart categorization and search",
+      "caption": "Redesigned transaction history with automatic categorization"
+    },
+    {
+      "src": "/images/projects/banking-transfer.svg",
+      "alt": "Money transfer flow showing recipient selection and amount input",
+      "caption": "Simplified transfer flow reduced to 3 steps from 7"
+    }
+  ],
+  "createdAt": "2024-03-15T00:00:00.000Z"
+}

@@ -1,0 +1,10 @@
+{
+  "slug": "invalid-project",
+  "title": "",
+  "description": "This project has an empty title and no screenshots, so it should be filtered out by validation.",
+  "shortDescription": "This should not appear in the gallery",
+  "featured": true,
+  "order": 99,
+  "screenshots": [],
+  "createdAt": "2024-01-01T00:00:00.000Z"
+}
